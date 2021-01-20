@@ -30,4 +30,15 @@ h1,h2,h3 {
 
   }
 
+  .photo {
+    order: 0.5rem outset black;
+    outline: 0.5rem solid khaki;
+    border-radius: 12px;
+    font: bold 1rem sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+    background-color: burlywood;
+  }
+
 
