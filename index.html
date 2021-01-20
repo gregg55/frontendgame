@@ -12,10 +12,26 @@
 <body>
 <h1>Welcome to Hangman Game</h1>
 
+
+<form id="login">
+    <label for="fname"> What's your name:</label> <br>
+    <input type="text" id="fname" name="fname" value=""> <br>
+    <input type="submit" value ="Submit">
+   
+   </form>
+
+
+
+
+
+<section class = "keyboard" > 
+
 <h2>Keyboard Keys </h2>
+<h3> Press Keys one at a time!</h3>
 
 <form name = "game">
- 
+
+  <!--Keyboard for Alphabet - OnClick -->
  <input type ="Button" Value = "A" onclick="guess ('A')">
  <input type ="Button" Value = "B" onclick="guess ('B')">
  <input type ="Button" Value = "C" onclick="guess ('C')">
@@ -45,9 +61,9 @@
  <input type ="Button" Value = "Y" onclick="guess ('Y')">
  <input type ="Button" Value = "Z" onclick="guess ('Z')">
 <br />  <!-- add line break -->
-
+ </div>
 </form>
-
+</section>
 
  <!-- add script.js link to <body> -->
     <script src="script.js" ></script>  

@@ -11,11 +11,16 @@ body {
   }
 
 
-  game {
+h1,h2,h3 {
+  text-align: center;
+}
 
-    border: 0.5rem outset pink;
+
+
+ .keyboard {
+
+    border: 0.5rem outset black;
     outline: 0.5rem solid khaki;
-    box-shadow: 0 0 0 2rem skyblue;
     border-radius: 12px;
     font: bold 1rem sans-serif;
     margin: 2rem;
