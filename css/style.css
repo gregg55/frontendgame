@@ -11,10 +11,23 @@ body {
   }
 
 
-h1,h2,h3 {
+h1 {
   text-align: center;
+  font-size: 30px;
 }
 
+h2,h3 {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* class letter is the keyboard letters */
+.letter {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid black;
+  text-transform: uppercase; 
+}
 
 
  .keyboard {
@@ -41,4 +54,22 @@ h1,h2,h3 {
     background-color: burlywood;
   }
 
+nav, footer {
+  clear: both;
+  background-color: #aeaca8;
+  height: 30px;
+}
 
+nav ul {
+  margin: 0px;
+  padding: 5px  0px 5px 30px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 40px;
+}
+
+nav li a {
+  color: Red;
+}
