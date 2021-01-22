@@ -4,97 +4,36 @@
     <meta charset="UTF-8">
    <!-- Media - responsive Design  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project - Hang Man</title>
-     <!-- add CSS.sytle link to <head> -->
-     <link href="css/style.css" rel="stylesheet">
-    <!--Updated Title -->
+    <title>Project - Trivia</title>  <!--Updated Title -->
+   <link href="css/style.css" rel="stylesheet">    <!-- add CSS.sytle link to <head> -->
+     <!-- add swap feature -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet"><!-- add swap feature -->
 </head>
 <body>
 <!-- Create the Main Screen and call it Class "mainScreen" -->
-    <div class ="mainScreen" >
-        <h1>Welcome to my Sports Trivia Game</h1>
-        <h2>Welcome to my Sports Trivia Game. Please select the correct answer.</h2>
-        <h3>Hint: The answers are based on my personal preferences as a Sports Fan!</h3>
+    <div class ="directions" >
+        <h1>Sports Trivia Game</h1>
+        <h2>Welcome to my Sports Trivia Game. </h2>
+        <h2>Please select the <strong>CORRECT</strong> answer!</h2>
+        <h3><em>Hint: The answers are based on my personal preferences as a Sports Fan!</em></h3>
     
-<!-- Create the Selection boxes for Football " -->   
+<!-- Create the Selection boxes for Home Page" -->   
     <nav>
         <ul>
-            <li><a href ="" class = "football"> Football Topics</a></li>
-            <li><a href ="" class = "quarterbacks"> Quarterbacks</a></li>
-            <li><a href ="" class = "runningbacks"> Running Backs</a></li>
-            <li><a href ="" class = "widerecievers"> Wide Receivers </a></li>
+            <li><a href ="" class = "home"> Home</a></li>
+            <li><a href ="" class = "home"> Football</a></li>
+            <li><a href ="" class = "home"> Baseball</a></li>
+            <li><a href ="" class = "home"> Basketball </a></li>
         </ul>
     </nav>
-
-    <section class ="photo">
-        <article>
-            <figure>
-                <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-                    <figcaption>Quarterback</figcaption>
-                <img scr ="https://tinyurl.com/y23ny6xy" alt="qb" >
-                    <figcaption>Running Back</figcaption>
-                <img scr ="https://tinyurl.com/y25wku74" alt="qb" >
-                    <figcaption> Wide Receiver</figcaption>
-            </figure>
-        </article>
-        <div class="start">Start Football Questions</div><!-- Create the Class "start" * Needs JS Link -->
-
-    </section>    
-
-<!-- Create the Selection boxes for the Baseball -->   
-<nav>
-    <ul>
-        <li><a href ="" class = "baseball"> Baseball Topics</a></li>
-        <li><a href ="" class = "pitchers"> Pitchers</a></li>
-        <li><a href ="" class = "batters"> Batters</a></li>
-        <li><a href ="" class = "catchers"> Catchers </a></li>
-    </ul>
-</nav>
-
-<section class ="photo">
-    <article>
-        <figure>
-           <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-                <figcaption>Quarterback</figcaption>
-            <img scr ="https://tinyurl.com/y23ny6xy" alt="qb" >
-                <figcaption>Running Back</figcaption>
-            <img scr ="https://tinyurl.com/y25wku74" alt="qb" >
-                <figcaption> Wide Receiver</figcaption>
-        </figure>
-    </article>
-    <div class="startBaseball">Begin Baseball Questions</div><!-- Create the Class "start" * Needs JS Link -->
-
-</section>    
-
-<!-- Create the Selection boxes for the Basketball -->   
-<nav>
-    <ul>
-        <li><a href ="" class = "basetball"> Basketball Topics</a></li>
-        <li><a href ="" class = "centers"> Centers</a></li>
-        <li><a href ="" class = "guards"> Guards</a></li>
-        <li><a href ="" class = "forwards"> Forwards </a></li>
-    </ul>
-</nav>
-
-<section class ="photo">
-    <article>
-        <figure>
-           <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-                <figcaption>Quarterback</figcaption>
-            <img scr ="https://tinyurl.com/y23ny6xy" alt="qb" >
-                <figcaption>Running Back</figcaption>
-            <img scr ="https://tinyurl.com/y25wku74" alt="qb" >
-                <figcaption> Wide Receiver</figcaption>
-        </figure>
-    </article>
-    <div class="startBasketball">Start Basketball Questions</div><!-- Create the Class "start" * Needs JS Link -->
-
-</section>    
-
-   
+    
+<!-- Create class .start Quesitons - use JS to create this link" -->  
+    <section class ="photo"> 
+        <div class="start">Start Questions</div><!-- Starts Questions-->     
+    </section>        
 
 
-<!-- enter name of player that is playing Hangman -->
+<!-- enter name of player  - Add on Feature -->
 <form id="login">
     <label for="fname"> What's your name:</label> <br>
     <input type="text" id="fname" name="fname" value=""> <br>
@@ -102,168 +41,204 @@
 
 </form> <!--End Form for Login name -->
 
-<section class = "keyboard" > 
-
-<h2>Keyboard Keys </h2>
-<h3> Press Keys one at a time!</h3>
-
-<form name = "game">
-
-  <!--Keyboard for Alphabet - OnClick -->
-
-  <div> <!--Keyboard for Alphabet - OnClick -->
- <input class = "letter" type ="Button" Value = "A" onclick="guess ('A')">
- <input class = "letter" type ="Button" Value = "B" onclick="guess ('B')">
- <input class = "letter" type ="Button" Value = "C" onclick="guess ('C')">
- <input class = "letter" type ="Button" Value = "D" onclick="guess ('D')">
- <input class = "letter" type ="Button" Value = "E" onclick="guess ('E')">
- <input class = "letter" type ="Button" Value = "F" onclick="guess ('F')">
- <input class = "letter" type ="Button" Value = "G" onclick="guess ('G')">
- <input class = "letter" type ="Button" Value = "H" onclick="guess ('H')">
- <input class = "letter" type ="Button" Value = "I" onclick="guess ('I')">
- <input class = "letter" type ="Button" Value = "J" onclick="guess ('J')">
- <input class = "letter" type ="Button" Value = "K" onclick="guess ('K')">
- <input class = "letter" type ="Button" Value = "L" onclick="guess ('L')"> 
- <input class = "letter" type ="Button" Value = "M" onclick="guess ('M')">
- <br />  <!-- add line break -->
- <input class = "letter" type ="Button" Value = "N" onclick="guess ('N')">
- <input class = "letter" type ="Button" Value = "O" onclick="guess ('O')">
- <input class = "letter" type ="Button" Value = "P" onclick="guess ('P')">
- <input class = "letter" type ="Button" Value = "Q" onclick="guess ('Q')">
- <input class = "letter" type ="Button" Value = "R" onclick="guess ('R')">
-
- <input class = "letter" type ="Button" Value = "S" onclick="guess ('S')">
- <input class = "letter" type ="Button" Value = "T" onclick="guess ('T')">
- <input class = "letter" type ="Button" Value = "U" onclick="guess ('U')">
- <input class = "letter" type ="Button" Value = "V" onclick="guess ('V')">
- <input class = "letter" type ="Button" Value = "W" onclick="guess ('W')">
- <input class = "letter" type ="Button" Value = "X" onclick="guess ('X')">
- <input class = "letter" type ="Button" Value = "Y" onclick="guess ('Y')">
- <input class = "letter" type ="Button" Value = "Z" onclick="guess ('Z')">
-<br />  <!-- add line break -->
-
-<input type = "text" name="guessed" onfocus ="stayAway ()"> Display letters Guessed so Far!<br>
-</form>
-</section>
-
- <!-- add script.js link to <body> -->
-    <script src="script.js" ></script>  
-
-    <!-- footer information-->
-	<footer> 
-		&copy; Copyright Protected by Dr. Machetta - 2021
-    </footer>
-</div>  <!--keyboard  -->
 </div>   <!--End Div for mainScreen -->
 
 <div id ="questions"> <!--Start Div Class for question#1 - #9 -->
     <div class ="q">
-        <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-   
-        <h3>Question 1</h3>
-        <h4>Who is the greatest quarterback of all time?</h4>
+        <h1>Who is the greatest <strong>QUARTERBACK</strong> of all time?</h1>
+        <h2>Choose an answer below!</h2>
+        <figure>
+            <img src="images/football" alt="football" />
+            <br>
+            <figcaption>Are you ready for some Football?</figcaption> 
+            </figure> 
+        <section class ="photo">
+           
         <div class ="answer">
+            
             <div class ="option correct"> Tom Brady</div>
             <div class ="option incorrect"> Joe Montana</div>
             <div class ="option incorrect"> Brett Favre</div>
             <div class ="option incorrect"> Drew Brees</div>
-    </div><!--End Div for question 1 -->
+        </div><!--End Div for Class "answer" -->
+    </div><!--End Div for Class "q" -->
 
     <div class ="q"> <!--Start Div for question#2 -->
-        <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-   
-        <h3>Question 2</h3>
-        <h4>Who is the greatest Running Back of all time?</h4>
+        <h1>Who is the greatest <strong>RUNNING BACK</strong> of all time?</h1>
+        <h2>Choose an answer below!</h2>
+        <figure>
+            <img src="images/football" alt="football" />
+            <br>
+            <figcaption>Are you ready for some Football?</figcaption> 
+            </figure> 
+        <section class ="photo">
+           
         <div class ="answer">
-            <div class ="option correct"> Walter Payton</div>
-            <div class ="option incorrect"> Joe Montana</div>
-            <div class ="option incorrect"> Brett Favre</div>
-            <div class ="option incorrect"> Drew Brees</div>
-    </div><!--End Div for question 2 -->
+            
+            <div class ="option correct"> Walter Peyton</div>
+            <div class ="option incorrect"> Emmit Smith</div>
+            <div class ="option incorrect"> O.J. Simpson</div>
+            <div class ="option incorrect"> Jim Brown</div>
+     </div><!--End Div for Class "answer" -->
+    </div><!--End Div for Class "q" -->
 
     <div class ="q"> <!--Start Div for question#3 -->
-        <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-   
-        <h3>Question 3</h3>
-        <h4>Who is the greatest Wide Receiver of all time?</h4>
+        <h1>Who is the greatest <strong>Wide Receiver</strong> of all time?</h1>
+        <h2>Choose an answer below!</h2>
+        <figure>
+            <img src="images/football" alt="football" />
+            <br>
+            <figcaption>Are you ready for some Football?</figcaption> 
+            </figure> 
+        <section class ="photo">
+           
         <div class ="answer">
-            <div class ="option correct"> Walter Payton</div>
-            <div class ="option incorrect"> Joe Montana</div>
-            <div class ="option incorrect"> Brett Favre</div>
-            <div class ="option incorrect"> Drew Brees</div>
-    </div><!--End Div for question 3 -->
+            
+            <div class ="option correct"> Jerry Rice</div>
+            <div class ="option incorrect"> Randy Moss</div>
+            <div class ="option incorrect"> Calvin Johnson</div>
+            <div class ="option incorrect"> Michael Irvin</div>
+        </div><!--End Div for Class "answer" -->
+    </div><!--End Div for Class "q" -->
 
     <div class ="q"> <!--Start Div for question#4 -->
-        <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-   
-        <h3>Question 4</h3>
-        <h4>Who is the greatest Center of all time?</h4>
+        <h1>Question 4</h1>
+        <section class ="photo">
+            <figure>
+                <img src="images/baseball.jpg" alt="baseball" width = "150" height = "150" />
+                <figcaption>Are you ready for some Football?</figcaption> 
+            </figure> 
+        <h1>Who is the greatest Center of all time?</h1>
         <div class ="answer">
             <div class ="option correct"> Kareem A</div>
             <div class ="option incorrect"> Wilt Chamberlain</div>
             <div class ="option incorrect"> Bill Russell</div>
             <div class ="option incorrect"> Tim Duncan</div>
-    </div><!--End Div for question 4 -->
+        </div><!--End Div for Class "answer" -->
+    </div><!--End Div for Class "q" -->
 
     <div class ="q"> <!--Start Div Classfor question#5 -->
-    <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-
-    <h3>Question 5</h3>
-    <h4>Who is the greatest Guard of all time?</h4>
-    <div class ="answer">
-        <div class ="option correct"> Michael Jordan</div>
-        <div class ="option incorrect"> Joe Dumars</div>
-        <div class ="option incorrect"> Magic Johnson</div>
-        <div class ="option incorrect"> Jerry West</div>
-</div><!--End Div for question 5 -->
+        <h1>Question 5</h1>
+        <section class ="photo">
+            <figure>
+                <img src="images/baseball.jpg" alt="baseball" width = "150" height = "150" />
+                <figcaption>Are you ready for some Football?</figcaption> 
+            </figure> 
+        <h1>Who is the greatest Guard of all time?</h1>
+        <div class ="answer">
+            <div class ="option correct"> Michael Jordan</div>
+            <div class ="option incorrect"> Joe Dumars</div>
+            <div class ="option incorrect"> Magic Johnson</div>
+            <div class ="option incorrect"> Jerry West</div>
+        </div><!--End Div for Class "answer" -->
+    </div><!--End Div for Class "q" -->
 
 <div class ="q"> <!--Start Div for question#6 -->
-    <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-
-    <h3>Question 6</h3>
-    <h4>Who is the greatest Forward of all time?</h4>
+    <h1>Question 6</h1>
+    <section class ="photo">
+        <figure>
+            <img src="https://tinyurl.com/y36brs5k" alt="Basketball" width = "150" height = "150" />
+                    <figcaption>Basketball</figcaption>
+        </figure> 
+    <h1>Who is the greatest Forward of all time?</h1>
     <div class ="answer">
         <div class ="option correct"> Lebron James</div>
         <div class ="option incorrect"> Larry Bird</div>
         <div class ="option incorrect"> Kevin McHale</div>
         <div class ="option incorrect"> Tim Duncan</div>
-</div><!--End Div for question 6 -->
+    </div><!--End Div for Class "answer" -->
+</div><!--End Div for Class "q" -->
 
 <div class ="q"> <!--Start Div for question#7 -->
-    <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-
-    <h3>Question 7</h3>
-    <h4>Who is the greatest Pitcher of all time?</h4>
+    <h1>Question 7</h1>
+    <section class ="photo">
+        <figure>
+            <img src="images/baseball.jpg" alt="baseball" width = "150" height = "150" />
+            <figcaption>how about them Cubbies!</figcaption> 
+        </figure>
+    
+    <h1>Who is the greatest Pitcher of all time?</h1>
     <div class ="answer">
         <div class ="option correct"> Tom Seaver</div>
         <div class ="option incorrect"> J. Quintana</div>
         <div class ="option incorrect"> Mark Fidrich</div>
         <div class ="option incorrect"> Jerry B</div>
-</div><!--End Div for question 7 -->
+    </div><!--End Div for Class "answer" -->
+</div><!--End Div for Class "q" -->
 
 <div class ="q"> <!--Start Div for question#8 -->
-    <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-
-    <h3>Question 8</h3>
-    <h4>Who is the greatest Batter of all time?</h4>
+    <h1>Question 8</h1>
+    <section class ="photo">
+        <figure>
+            <img src="images/baseball.jpg" alt="baseball" width = "150" height = "150" />
+            <figcaption>how about them Cubbies!</figcaption> 
+        </figure>
+    
+    <h1>Who is the greatest Batter of all time?</h1>
     <div class ="answer">
         <div class ="option correct"> Babe Ruth</div>
         <div class ="option incorrect"> Alex Rodriquez</div>
         <div class ="option incorrect"> Hank Aaron</div>
         <div class ="option incorrect"> Mark M</div>
-</div><!--End Div for question 8 -->
+    </div><!--End Div for Class "answer" -->
+</div><!--End Div for Class "q" -->
 
 <div class ="q"> <!--Start Div for question#9 -->
-    <img scr ="https://tinyurl.com/y36brs5k" alt="qb" >
-
-    <h3>Question 9</h3>
-    <h4>Who is the greatest catcher of all time?</h4>
+    <h1>Question 9</h1>
+    <section class ="photo">
+        <figure>
+            <img src="images/baseball.jpg" alt="baseball" width = "250" height = "250" />
+            <figcaption>how about them Cubbies!</figcaption> 
+        </figure>
+    <h1>Who is the greatest catcher of all time?</h1>
     <div class ="answer">
         <div class ="option correct"> Johny Bench</div>
         <div class ="option incorrect"> Wilson Contreras</div>
         <div class ="option incorrect"> Bob V</div>
         <div class ="option incorrect"> Mark M</div>
-</div><!--End Div for question 9 -->
-</div> <!--End Div Class Question for # 1 - #9-->
+    </div><!--End Div for Class "answer" -->
+</div><!--End Div for Class "q" -->
+
+<div class ="q"> <!--Start Div for question#10 -->
+    <h1>Question 10</h1>
+    <section class ="photo">
+        <figure>
+            <img src="images/baseball.jpg" alt="baseball" width = "250" height = "250" />
+            <figcaption>how about them Cubbies!</figcaption> 
+        </figure>
+    <h1>Did you enjoy the Sports Trivia</h4>
+    <div class ="answer">
+        <div class ="option correct"> Great</div>
+        <div class ="option incorrect"> Above Average</div>
+        <div class ="option incorrect"> Average</div>
+        <div class ="option incorrect"> Below Average</div>
+    </div><!--End Div for Class "answer" -->
+</div><!--End Div for Class "q" -->
+
+
+</div> <!--End Div Class "questions" for # 1 - #9-->
+
+
+ <!-- add result  -->   
+    <div class="q resultQ">
+        <section class ="photo">
+            <figure>
+                <img src="https://tinyurl.com/y3jxfh59" alt="Trivia" width = "300" height = "300"/>
+                <figcaption>Would you Like to Play Again? </figcaption> 
+            </figure>
+        <div class="result"></div>
+        <div class="restart">Try Again</div>
+</div>
+
+    
+    <script src="script.js" ></script>  <!-- add script.js link to <body> -->
+
+    <!-- footer information-->
+	<footer> 
+		&copy; Copyright Protected by Dr. Machetta - 2021
+    </footer>
+
+
+
 </body>
 </html>

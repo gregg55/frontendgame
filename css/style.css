@@ -1,3 +1,5 @@
+/* main border around the Body - use my standard format*/
+
 body {
     border: 0.5rem outset pink;
     outline: 0.5rem solid khaki;
@@ -7,57 +9,35 @@ body {
     margin: 2rem;
     padding: 1rem;
     outline-offset: 0.5rem;
-    background-color: burlywood;
+    background-color: white;
+  ;
   }
-
-
+/* Declare all h1 - h6 */
 h1 {
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
 }
 
-h2,h3 {
+h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+h3 {
   text-align: center;
   font-size: 15px;
+  font:italic;
 }
 
-/* class letter is the keyboard letters */
-.letter {
-  display: inline-block;
-  padding: 5px 10px;
-  border: 1px solid black;
-  text-transform: uppercase; 
+figcaption {
+  text-align: center;
+  color: red;
 }
-
-
- .keyboard {
-
-    border: 0.5rem outset black;
-    outline: 0.5rem solid khaki;
-    border-radius: 12px;
-    font: bold 1rem sans-serif;
-    margin: 2rem;
-    padding: 1rem;
-    outline-offset: 0.5rem;
-    background-color: burlywood;
-
-  }
-
-  .photo {
-    order: 0.5rem outset black;
-    outline: 0.5rem solid khaki;
-    border-radius: 12px;
-    font: bold 1rem sans-serif;
-    margin: 2rem;
-    padding: 1rem;
-    outline-offset: 0.5rem;
-    background-color: burlywood;
-  }
-
+/* Declare Navigation Bar & Footer CSS Setup  */
 nav, footer {
   clear: both;
-  background-color: #aeaca8;
-  height: 30px;
+  background-color: #d2d0cc;
+  height: 40px;
 }
 
 nav ul {
@@ -66,10 +46,118 @@ nav ul {
 }
 
 nav li {
-  display: inline;
+  display: inline;  /* set li to inline */
   margin-right: 40px;
 }
 
-nav li a {
+nav li a {   /* this is the Nav Bar items */
   color: Red;
+  font-size: 20px;
 }
+
+/* Declare the Class items */
+ .questions {
+color: red;
+font-size: 50px;
+
+ }
+
+ /* Class Clicks -  combine .start, .option, .result */
+ .start , .restart, .option {
+    color: red;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: .1em #404040 solid;
+    border-radius: 5em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    margin: 15%;
+    font-size: 25px;
+    
+    }
+
+/* Class HOVER -  combine .start, .option, .result */
+
+    .start:hover , .option:hover , .restart:hover {
+      background: rgba(0,0,0,0.3);
+      box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.126), 
+      0 0.9px 1.7px rgba(0, 0, 0, 0.179), 0 1.8px 3.5px rgba(0, 0, 0, 0.224),
+      0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px #1a53ff;
+      background-color: #cccccc;
+      color: #404040;
+      border: black;
+      
+  }
+  
+/* Class ANSWER -  potential answers 1-4, break them into 2 groups of 2 (diplay grid) */
+.answer {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr); /* Split 2 x 2 for the potential response */
+  font-size: 30px;
+  color: black;
+}
+
+
+  /* Class .photo - contains all the images */
+  .photo {
+    order: 0.5rem outset black;
+    outline: 0.5rem solid khaki;
+    border-radius: 12px;
+    font: bold 1rem sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+    background-color: rgb(226, 215, 201);
+    height: 350;
+  }
+
+  /* Class .align - contains all the images & aligns 3 across */
+  .align {
+    float: left;
+    width: 33.33%;  /* since 3 photo's use 33.33% (use 50% for 2 photos)*/
+    padding: 5px;
+  }
+
+  /* class .row - clears the float after image & displays - part of the class .align */
+  .row {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+
+/* Class .result - Shows Text Content from the Java Script */
+.result {
+  font-size: 30px;
+}
+
+/* Class .resultQ */
+.resultQ {
+  margin: 20%;
+}
+
+/* Images in the Questions & border */
+  #questions img {
+    border:30px;
+    box-shadow: 10px 10px 5px rgb(49, 42, 42);
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.q img{
+        width: 100%;
+        margin-top: 10px 5px 15px 20px;
+        
+    } 
+
+/* alignment for Class .q - how far from the top margins */
+.q {
+  margin: 0% auto;
+  display: none;
