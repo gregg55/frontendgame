@@ -1,18 +1,17 @@
 header { grid-area: header;}
 body {grid-area: body;}
-main { grid-area: main;}
+/*main { grid-area: main;} */
 footer { grid-area: footer;}
 
 .wrapper {
 display: grid;
-}
 
 grid-template-areas:
 "header"
-"main"
+/*"main" */
 "body"
 "footer"
-
+}
 
 
 /* main border around the Body - use my standard format*/
@@ -152,12 +151,12 @@ font-size: 50px;
 }
 
 /* Class .resultQ */
-.resultQ {
+/*.resultQ {
   margin: 20%;
 }
-
+*/
 /* Images in the Questions & border */
-  #questions img {
+  #questions img ,.q img {
     border:30px;
     box-shadow: 10px 10px 5px rgb(49, 42, 42);
     width: 25%;
@@ -168,23 +167,37 @@ font-size: 50px;
 
 }
 
-.q img{
+/*.q img{
         width: 100%;
         margin-top: 10px 5px 15px 20px;
         
     } 
-
+*/
 /* alignment for Class .q - how far from the top margins */
-.q {
+.q , .resultQ{
   margin: 0% auto;
   display: none;
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) { 
   width: 100%;
+  h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 1.3em;
+    margin: 10% 0 10% 0;
 }
 
+h3 {
+    font-size: 1.3em;
+}
+
+
+.home , .start , .option {
+  font-size: 3em;
+}
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  width: 100;
+  width: 100%;
 }
