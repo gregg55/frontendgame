@@ -1,3 +1,20 @@
+header { grid-area: header;}
+body {grid-area: body;}
+main { grid-area: main;}
+footer { grid-area: footer;}
+
+.wrapper {
+display: grid;
+}
+
+grid-template-areas:
+"header"
+"main"
+"body"
+"footer"
+
+
+
 /* main border around the Body - use my standard format*/
 
 body {
