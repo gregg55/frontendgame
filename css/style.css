@@ -130,17 +130,18 @@ font-size: 50px;
     height: 350;
   }
 
-  /* Class .align - contains all the images & aligns 3 across */
+  /* Class .align - contains all the images & aligns 3 across *
   .align {
     float: left;
-    width: 33.33%;  /* since 3 photo's use 33.33% (use 50% for 2 photos)*/
+    width: 33.33%;  /* since 3 photo's use 33.33% (use 50% for 2 photos)
     padding: 5px;
   }
-
+  */
   /* class .row - clears the float after image & displays - part of the class .align */
   .row {
     content: "";
     clear: both;
+    
     display: table;
   }
   
@@ -150,17 +151,12 @@ font-size: 50px;
   font-size: 30px;
 }
 
-/* Class .resultQ */
-/*.resultQ {
-  margin: 20%;
-}
-*/
 /* Images in the Questions & border */
   #questions img ,.q img {
     border:30px;
     box-shadow: 10px 10px 5px rgb(49, 42, 42);
     width: 25%;
-    height: 25%;
+    height: 15%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -181,6 +177,9 @@ font-size: 50px;
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) { 
   width: 100%;
+  body {
+    margin: 10% 15% 0 15%;
+  }
   h1 {
     font-size: 3em;
 }
@@ -193,9 +192,9 @@ h3 {
     font-size: 1.3em;
 }
 
-
-.home , .start , .option {
+.home , .start , .option , .restart , .resultQ{
   font-size: 3em;
+}
 }
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
